@@ -1,7 +1,9 @@
 import Project from "../../components/Card/Project/Project";
+import Header from "../../components/Header/Header/Header";
 import { Conteiner } from "./styles";
 import { useState, useEffect } from "react";
 import projects from "../../data/projects";
+
 function Projects() {
   const [buttonAtivo, setButtonAtivo] = useState("all");
   const [filtroAtivo, setFiltroAtivo] = useState("all");
@@ -22,16 +24,21 @@ function Projects() {
 
     if (filtroAtivo === "all") {
       // gera todos os cards
-      setProjetos(projects.map((item) => <Project key={item.id} item={item} />));
+      setProjetos(
+        projects.map((item) => <Project key={item.id} item={item} />)
+      );
     } else {
       // gera os cards que tem a categoria
-      setProjetos(filtraElementos(projects, filtroAtivo, "types").map((item) => <Project key={item.id} item={item} />));
+      setProjetos(
+        filtraElementos(projects, filtroAtivo, "types").map((item) => (
+          <Project key={item.id} item={item} />
+        ))
+      );
     }
   }, [filtroAtivo]);
   return (
     <Conteiner>
-      <p>Our Projects</p>
-      <h1>Recently Launched Projects</h1>
+      <Header categorie="Our Projects" title="Recently Launched Projects" />
       <ul>
         <li>
           <button
