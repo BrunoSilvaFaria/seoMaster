@@ -6,6 +6,15 @@ export const Conteiner = styled.article`
   border-radius: 10px;
   height: 350px;
   width: 270px;
+  @media (max-width: 990px) {
+    width: 336px;
+  }
+  @media (min-width: 576px) and (max-width: 765px) {
+    width: 516px;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+  }
   &:hover {
     background-color: ${colors.blue[200]};
     h4,
