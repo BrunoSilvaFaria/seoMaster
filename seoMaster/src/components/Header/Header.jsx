@@ -11,19 +11,19 @@ function Header() {
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="/about">About</a>
               </li>
               <li>
-                <a href="#">Service</a>
+                <a href="/services">Service</a>
               </li>
               <li>
-                <a href="#">Project</a>
+                <a href="/projects">Project</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
                   </ul>
                   
