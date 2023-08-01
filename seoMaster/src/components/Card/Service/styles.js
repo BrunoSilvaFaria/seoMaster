@@ -1,20 +1,10 @@
 import { styled } from "styled-components";
-import { align, displayFlex } from "../../styles";
+import { align, cardSmall, displayFlex } from "../../styles";
 import { colors } from "../../../helpers/colors";
 export const Conteiner = styled.article`
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 10px;
+  ${cardSmall}
   height: 350px;
   width: 270px;
-  @media (max-width: 990px) {
-    width: 336px;
-  }
-  @media (min-width: 576px) and (max-width: 765px) {
-    width: 516px;
-  }
-  @media (max-width: 575px) {
-    width: 100%;
-  }
   &:hover {
     background-color: ${colors.blue[200]};
     h4,

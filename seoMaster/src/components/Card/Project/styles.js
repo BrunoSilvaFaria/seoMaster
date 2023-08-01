@@ -1,22 +1,15 @@
 import { styled } from "styled-components";
-import { align, displayFlex } from "../../styles";
+import { align, cardSmall, displayFlex } from "../../styles";
 import { colors } from "../../../helpers/colors";
 export const Conteiner = styled.article`
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  ${cardSmall}
   background-color: ${colors.black};
-  border-radius: 10px;
   height: 270px;
   width: 270px;
-  flex-shrink: 0;
-  @media (max-width: 990px) {
-    width: 336px;
-  }
   @media (min-width: 576px) and (max-width: 765px) {
-    width: 516px;
     height: 516px;
   }
   @media (max-width: 575px) {
-    width: 100%;
     padding-bottom: 100%;
   }
   &:hover {
@@ -69,5 +62,4 @@ export const Conteiner = styled.article`
   .align {
     display: none;
   }
- 
 `;
