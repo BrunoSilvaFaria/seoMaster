@@ -6,28 +6,41 @@ import { align, displayFlex } from "../styles";
 const Conteiner = styled.footer`
   background: ${colors.blue[200]};
   border-bottom: 1px solid ${colors.blue[300]};
-  .align{
+  .align {
     ${align};
     ${displayFlex};
     align-items: flex-start;
     flex-wrap: wrap;
-    
   }
   * {
     color: ${colors.whiteLigth};
     transition: all, 0.3s;
   }
-  h3 {
+  h3,
+  .newsletter h3 {
     color: ${colors.white};
     font-weight: ${fonts.weight[500]};
     margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
   }
   a:hover:not(.project__img) {
     letter-spacing: 1px;
   }
-  section {
+
+  section,
+  .newsletter {
     width: 228px;
     margin-bottom: 20px;
+  }
+  .newsletter {
+    .paragraph {
+      font-size: 16px;
+      font-weight: 24px;
+    }
+    input {
+      width: 75%;
+    }
   }
 `;
 
@@ -85,32 +98,4 @@ const Project = styled.section`
   }
 `;
 
-const Newsletter = styled.section`
-  p{
-    line-height: 24px;
-    margin-bottom: 10px;
-  }
-
-  .input__conteiner{
-    ${displayFlex};
-    background-color: ${colors.white};
-    border-radius: 50px;
-    height: 48px;
-    justify-content: center;
-    input{
-      color: ${colors.black};
-      font-size: 18px;
-      width: 75%;
-    }
-  
-    .newsletter__icon{
-      font-size: 18px;
-      & path{
-        color: ${colors.blue[200]};
-      }
-    }
-  }
-`;
-
-
-export { Conteiner, Get, Popular, Project, Newsletter };
+export { Conteiner, Get, Popular, Project };

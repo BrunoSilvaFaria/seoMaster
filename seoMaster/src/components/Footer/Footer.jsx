@@ -1,9 +1,9 @@
-import { Conteiner, Get, Newsletter, Popular, Project } from "./styles";
+import { Conteiner, Get, Popular, Project } from "./styles";
+import Newsletter from "../../components/Form/Newsletter/Newsletter";
 import {
   FaPhone,
   FaEnvelope,
   FaAngleRight,
-  FaPaperPlane,
   FaYoutube,
   FaFacebookF,
   FaTwitter,
@@ -42,27 +42,27 @@ function Footer() {
             <ul className="redes">
               <li>
                 <a href="#" className="redes__link">
-                  <FaTwitter className="redes__icon"/>
+                  <FaTwitter className="redes__icon" />
                 </a>
               </li>
               <li>
                 <a href="#" className="redes__link">
-                  <FaFacebookF className="redes__icon"/>
+                  <FaFacebookF className="redes__icon" />
                 </a>
               </li>
               <li>
                 <a href="#" className="redes__link">
-                  <FaYoutube className="redes__icon"/>
+                  <FaYoutube className="redes__icon" />
                 </a>
               </li>
               <li>
                 <a href="#" className="redes__link">
-                  <FaInstagram className="redes__icon"/>
+                  <FaInstagram className="redes__icon" />
                 </a>
               </li>
               <li>
                 <a href="#" className="redes__link">
-                  <FaLinkedinIn className="redes__icon"/>
+                  <FaLinkedinIn className="redes__icon" />
                 </a>
               </li>
             </ul>
@@ -146,25 +146,11 @@ function Footer() {
           </nav>
         </Project>
 
-        <Newsletter className="newsletter">
-          <h3>Newsletter</h3>
-          <p>
-            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur
-            facilisis ornare velit non vulpu
-          </p>
-
-          <div className="input__conteiner">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Yout Email"
-            />
-            <button type="submit">
-              <FaPaperPlane className="newsletter__icon" />
-            </button>
-          </div>
-        </Newsletter>
+        <Newsletter
+          class="newsletter"
+          title="Newsletter"
+          paragraph="Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu"
+        />
       </div>
     </Conteiner>
   );
