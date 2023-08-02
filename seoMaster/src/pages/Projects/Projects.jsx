@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header/Header";
 import { Conteiner } from "./styles";
 import { useState, useEffect } from "react";
 import projects from "../../data/projects";
-
+import HeaderPages from "../../components/Header/HeaderPages/HeaderPages";
 function Projects() {
   const [buttonAtivo, setButtonAtivo] = useState("all");
   const [filtroAtivo, setFiltroAtivo] = useState("all");
@@ -37,45 +37,51 @@ function Projects() {
     }
   }, [filtroAtivo]);
   return (
-    <Conteiner>
-      <Header categorie="Our Projects" title="Recently Launched Projects" />
-      <ul>
-        <li>
-          <button
-            onClick={() => {
-              handleActive("all");
-            }}
-            value="all"
-            className={buttonAtivo === "all" ? " active" : ""}
-          >
-            All
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              handleActive("design");
-            }}
-            value="design"
-            className={buttonAtivo === "design" ? " active" : ""}
-          >
-            Design
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              handleActive("development");
-            }}
-            value="development"
-            className={buttonAtivo === "development" ? " active" : ""}
-          >
-            Development
-          </button>
-        </li>
-      </ul>
-      <section className="cards">{projetos}</section>
-    </Conteiner>
+            <>
+              <HeaderPages
+                        title="Projects"
+                        current="Projects"
+                      />
+                  <Conteiner>
+                    <Header categorie="Our Projects" title="Recently Launched Projects" />
+                    <ul>
+                      <li>
+                        <button
+              onClick={() => {
+                handleActive("all");
+              }}
+              value="all"
+              className={buttonAtivo === "all" ? " active" : ""}
+                        >
+              All
+                        </button>
+                      </li>
+                      <li>
+                        <button
+              onClick={() => {
+                handleActive("design");
+              }}
+              value="design"
+              className={buttonAtivo === "design" ? " active" : ""}
+                        >
+              Design
+                        </button>
+                      </li>
+                      <li>
+                        <button
+              onClick={() => {
+                handleActive("development");
+              }}
+              value="development"
+              className={buttonAtivo === "development" ? " active" : ""}
+                        >
+              Development
+                        </button>
+                      </li>
+                    </ul>
+                    <section className="cards">{projetos}</section>
+                  </Conteiner>
+            </>
   );
 }
 
