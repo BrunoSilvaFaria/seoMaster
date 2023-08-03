@@ -7,17 +7,17 @@ function Members() {
     {
       name: "Jhon Doe",
       cargo: "Ceo",
-      img: "#",
+      img: "./assets/team-1.jpg",
     },
     {
       name: "Emma William",
       cargo: "Manager",
-      img: "#",
+      img: "./assets/team-2.jpg",
     },
     {
       name: "Noah Michael",
       cargo: "Designer",
-      img: "#",
+      img: "./assets/team-3.jpg",
     },
   ];
   const member = dados.map((item) => {
