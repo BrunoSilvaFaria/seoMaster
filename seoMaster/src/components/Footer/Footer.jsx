@@ -113,33 +113,33 @@ function Footer() {
             <ul>
               <li>
                 <a href="#" className="project__img">
-                  <img src="" alt="Foto ilustrativa do projeto" />
+                  <img src="./assets/portfolio-1.jpg" alt="Foto ilustrativa do projeto" />
                 </a>
               </li>
               <li>
                 <a href="#" className="project__img">
-                  <img src="" alt="Foto ilustrativa do projeto" />
+                  <img src="./assets/portfolio-2.jpg" alt="Foto ilustrativa do projeto" />
                 </a>
               </li>
               <li>
                 <a href="#" className="project__img">
-                  <img src="" alt="Foto ilustrativa do projeto" />
+                  <img src="./assets/portfolio-3.jpg" alt="Foto ilustrativa do projeto" />
                 </a>
               </li>
               <li>
                 <a href="#" className="project__img">
-                  <img src="" alt="Foto ilustrativa do projeto" />
+                  <img src="./assets/portfolio-4.jpg" alt="Foto ilustrativa do projeto" />
                 </a>
               </li>
               <li>
                 <a href="#" className="project__img">
-                  <img src="" alt="Foto ilustrativa do projeto" />
+                  <img src="./assets/portfolio-5.jpg" alt="Foto ilustrativa do projeto" />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="project__img">
-                  <img src="" alt="Foto ilustrativa do projeto" />
+                  <img src="./assets/portfolio-6.jpg" alt="Foto ilustrativa do projeto" />
                 </a>
               </li>
             </ul>

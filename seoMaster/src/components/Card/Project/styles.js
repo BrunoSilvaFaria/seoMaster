@@ -3,9 +3,9 @@ import { align, cardSmall, displayFlex } from "../../styles";
 import { colors } from "../../../helpers/colors";
 export const Conteiner = styled.article`
   ${cardSmall}
-  background-color: ${colors.black};
   height: 270px;
   width: 270px;
+  background-size: contain;
   @media (min-width: 576px) and (max-width: 765px) {
     height: 516px;
   }
@@ -13,7 +13,6 @@ export const Conteiner = styled.article`
     padding-bottom: 100%;
   }
   &:hover {
-    background-color: ${colors.blue[200]};
     span,
     .align {
       ${displayFlex};
